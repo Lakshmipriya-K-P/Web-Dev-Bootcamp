@@ -6,113 +6,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div>
-            <h2>SHE GCEK</h2>
+        <div class="container">
+            <div id="caption">
+                <h1><span class="colour">SHE</span> GCEK</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="home">
+                        <a href=index.html>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href=#>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href=#>
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href=#>
+                            Content
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href=index.html>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href=#>
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href=#>
-                        Services
-                    </a>
-                </li>
-                <li>
-                    <a href=#>
-                        Content
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <section id="hero">
-        <div>
+        <div class="container">
             <h1>Web Development
                 <br>Bootcamp
             </h1>
         </div>
     </section>
 
+    <section id="search">
+    </section>
+
     <section id=images>
-        <div>
-            <img src=html.jpeg alt="html image" width=200 height=200>
+        <div class="container">
+        <div class="box">
+            <img src=html.jpeg alt="html image">
             <h4>HTML</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Cras cursus, lorem sit amet lacinia lobortis, enim diam dignissim tortor,
-                vitae tempor leo turpis ut diam. Vestibulum scelerisque risus vel pellentesque
-                euismod. Nam eu nunc rhoncus, dignissim quam sed, porttitor ligula. Sed sit
-                amet mi orci. 
+                vitae tempor leo turpis ut diam.
             </p>
         </div>
-        <div>
-            <img src=css.jpeg alt="css image" width=200 height=200>
+        <div class="box">
+            <img src=css.jpeg alt="css image">
             <h4>CSS</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Cras cursus, lorem sit amet lacinia lobortis, enim diam dignissim tortor,
-                vitae tempor leo turpis ut diam. Vestibulum scelerisque risus vel pellentesque
-                euismod. Nam eu nunc rhoncus, dignissim quam sed, porttitor ligula. Sed sit
-                amet mi orci. 
+                vitae tempor leo turpis ut diam.
             </p>
         </div>
-        <div>
-            <img src=js.jpeg alt="js image" width=200 height=200>
+        <div class="box">
+            <img src=js.jpeg alt="js image">
             <h4>JS</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Cras cursus, lorem sit amet lacinia lobortis, enim diam dignissim tortor,
-                vitae tempor leo turpis ut diam. Vestibulum scelerisque risus vel pellentesque
-                euismod. Nam eu nunc rhoncus, dignissim quam sed, porttitor ligula. Sed sit
-                amet mi orci. 
+                vitae tempor leo turpis ut diam.
             </p>
+        </div>
         </div>
     </section>
 
     <section id=slogan>
-        <div>
+        <div class="container">
             <h2>
                 Hurry up! and experience the journey with us!
             </h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Cras cursus, lorem sit amet lacinia lobortis, enim diam dignissim tortor,
                 vitae tempor leo turpis ut diam. Vestibulum scelerisque risus vel pellentesque
                 euismod. Nam eu nunc rhoncus, dignissim quam sed, porttitor ligula. Sed sit
-                amet mi orci. 
+                amet mi orci.
             </p>
         </div>
     </section>
 
-    <section id=form>
+    <section id=register class="container">
         <h3>
-            Register here
+            Register Here
         </h3>
-        <div>
-            <forms>
-                <div>
+    </section>
+    <section id=form>
+        <div class=container>
+            <form style="text-align: center; justify-content: center;">
+                <div class=tab>
                     <label>Name</label><br>
                     <input type=text>
                 </div>
-                <div>
+                <div  class=tab>
                     <label>Email</label>
                     <input type=email>
                 </div>
-                <div>
+                <div class=tab>
                     <label>Batch</label>
                     <select>
                         <option>2k20</option>
@@ -125,11 +131,11 @@
                     </div>
 
                 </div>
-            </forms>
+            </form>
         </div>
     </section>
 
-    <section id=video>
+    <section id=video class="container">
         <div>
             <h2>Learn, Explore, Create</h2>
             <iframe width="500" height="300"
