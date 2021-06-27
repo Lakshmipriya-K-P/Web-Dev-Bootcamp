@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js">
+    </script>
 </head>
 
 <body>
@@ -56,7 +58,7 @@
     </section>
 
     <section id=images>
-        <div class="container">
+        <div class="container ">
         <div class="box">
             <img src=html.jpeg alt="html image">
             <h4>HTML</h4>
@@ -99,6 +101,13 @@
                 euismod. Nam eu nunc rhoncus, dignissim quam sed, porttitor ligula. Sed sit
                 amet mi orci.
             </p>
+            <button onclick="changecontent()">Know More</button>
+            <p id="know-more">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Cras cursus, lorem sit amet lacinia lobortis, enim diam dignissim tortor,
+                vitae tempor leo turpis ut diam. Vestibulum scelerisque risus vel pellentesque
+                euismod. Nam eu nunc rhoncus, dignissim quam sed, porttitor ligula. Sed sit
+                amet mi orci.
+            </p>
         </div>
     </section>
 
@@ -109,23 +118,27 @@
     </section>
     <section id=form>
         <div class=container>
-            <form style="text-align: center; justify-content: center;">
+            <form style="text-align: center; justify-content: center;" onsubmit="return formvalidation()">
                 <div class=tab>
                     <label>Name</label><br>
-                    <input type=text>
+                    <input id="name-i" type=text>
+                    <p id="name-val">Please enter name</p>
                 </div>
                 <div  class=tab>
                     <label>Email</label>
-                    <input type=email>
+                    <input id="email-i" type=email>
+                    <p id="email-val">Please enter an email id</p>
                 </div>
                 <div class=tab>
                     <label>Batch</label>
-                    <select>
+                    <select id="batch-i">
+                        <option>--none--</option>
                         <option>2k20</option>
                         <option>2k19</option>
                         <option>2k18</option>
                         <option>2k17</option>
                     </select>
+                    <p id="batch-val">Please choose a batch</p>
                     <div>
                         <input type=submit>
                     </div>

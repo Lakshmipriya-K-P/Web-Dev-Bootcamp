@@ -180,3 +180,17 @@ footer{
 footer a{
     color:#f4b41a;
 }
+
+#slogan{
+    text-align: center;
+}
+
+#know-more{
+    display: none;
+}
+
+#name-val, #email-val, #batch-val{
+    color:red;
+    font-size: 15px;
+    display: none;
+}
